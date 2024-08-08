@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Bolibenga</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="apropos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">J.wetoky<span>a</span></div>
+            <div class="burger-menu" id="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="#competence">Compétences</a></li>
+                <li><a href="#project">project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Bonjour, je suis Développeur Back-end</h1>
+                <p>Spécialisé dans la création d'applications web, en les façonnant et en les construisant avec du code.</p>
+            </div>
+            <div class="photo-container">
+                <img src="images/jonathan.png" alt="Votre photo">
+            </div>
+        </div>
+    </header>
+
+    <section class="skills" id="competence">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="images/html.png" alt="Contrôle de version Git ">
+                <h3>HTML5</h3>
+                <p>Compétent en HTML5 pour la création de pages web structurées et accessibles, optimisées pour différents appareils et navigateurs</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/css.png" alt="Conception d'application">
+                <h3>Css 3</h3>
+                <p>Compétent en CSS pour concevoir des interfaces utilisateur attrayantes, réactives, et cohérentes, avec une attention particulière aux détails de style et à l'optimisation pour différents écrans</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/js.png" alt="Développement Back-end">
+                <h3>Javascript</h3>
+                <p>Compétent en JavaScript pour développer des fonctionnalités dynamiques et interactives sur le web.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/node.png" alt="Développement Web">
+                <h3>Nodejs</h3>
+                <p>Compétent en Node.js pour développer des applications backend robustes et évolutives, en utilisant des API RESTful et une gestion efficace des  processus asynchrones.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/bdd.png" alt="Photographie">
+                <h3>Base de donnée</h3>
+                <p>Compétent  dans la conception, l'optimisation, et la gestion de bases de données relationnelles et non relationnelles, assurant ainsi une gestion efficace de vos bases de données.</p>
+            </div>
+            <div class="skill-card">
+                <img src="images/git.png" alt="Freelance">
+                <h3>Contrôle de version Git & github</h3>
+                <p> avec de compétentence en Git  pour le contrôle de version, la gestion de branches, et la collaboration en équipe, ainsi qu'une maîtrise de GitHub pour l'hébergement de projets.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="project">
+        <h2>Projets Réalisés</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3> GESTION D'UNE BIBLIOTHEQUE</h3>
+                <p>J'ai développé un système de gestion de bibliothèque permettant la gestion efficace des livres, des emprunts, et des utilisateurs. Le projet intègre une interface intuitive pour le personnel et les membres, avec des fonctionnalités de recherche avancée et de suivi des prêts.</p>
+            </div>
+            <div class="project-card">
+                <h3>CREATION D'UN BLOG</h3>
+                <p>J'ai développé un blog avec Adonis.js en tant que framework backend et SQLite3 pour la gestion de la base de données. Ce projet permet aux utilisateurs de créer, éditer, et supprimer des articles, tout en offrant des fonctionnalités comme les commentaires et les catégories d'articles.</p>
+            </div>
+            <div class="project-card">
+                <h3>GESTION D'ETUDIANTS</h3>
+                <p>J'ai développé une application de gestion d'étudiants en utilisant Express.js pour le backend et SQLite pour la base de données. L'application permet de gérer les informations des étudiants, y compris l'inscription, la mise à jour des données.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Connectez-vous avec moi</h2>
+        <div class="social-links">
+            <a href="https://wa.me/0995130915">
+                <img src="images/icons8-whatsapp-500.png" alt="logo whatsapp">
+            </a>
+            <a href="https://facebook.com/jonathan.bolibenga">
+                <img src="images/icons8-facebook-nouveau-500.png" alt="logo facebook">
+            </a>
+            <a href="https://github.com/JONATHAN-BOLIBENGA01">
+                <img src="images/icons8-github-500.png" alt="logo github">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jonathan Bolibenga Wetokya. Made with Love.</p>
+    </footer>
+
+    <script>
+        document.getElementById('burger-menu').addEventListener('click', function() {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+
+        AOS.init()
+    </script>
+</body>
+</html>

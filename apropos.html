@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos</title>
+    <link rel="stylesheet" href="apropos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">J.wetoky<span>a</span></a></div>
+            <div class="burger-menu" id="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="index.html#competence">Compétences</a></li>
+                <li><a href="index.html#project">project</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Section À Propos -->
+    <section class="about-section">
+       
+        <div class="photo-container">
+            <img src="images/jonathan.png" alt="Votre Photo">
+        </div>
+        <div class="about-content">
+            <h1>Hello, je suis Jonathan Bolibenga Wetokya</h1>
+            <p>
+                Je suis un développeur passionné avec une expérience dans divers domaines, y compris le développement web et logiciel. Mon parcours m'a permis d'acquérir des compétences solides dans la création de solutions innovantes qui répondent aux besoins réels des utilisateurs.
+            </p>
+            <p>
+                En plus de mon expertise technique, j'ai également développé des compétences en gestion de projet, ce qui me permet de travailler efficacement en équipe et de mener à bien des projets complexes. Mon objectif est de continuer à apprendre et à évoluer dans ce domaine fascinant.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Informations Personnelles -->
+    <section class="personal-info">
+        <h2>Informations Personnelles</h2>
+        <ul>
+            <li><strong>Ville :</strong> Lubumbashi</li>
+            <li><strong>Pays :</strong> RDCongo</li>
+            <li><strong>Date d'anniversaire :</strong>  01/01/2004</li>
+        </ul>
+    </section>
+
+    <!-- Section Footer -->
+    <footer>
+        <p>&copy; 2024 Jonathan Bolibenga Wetokya. Made with Love.</p>
+    </footer>
+    <script>
+        document.getElementById('burger-menu').addEventListener('click', function() {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+
+        AOS.init()
+    </script>
+</body>
+</html>
